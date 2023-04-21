@@ -1,0 +1,266 @@
+/* Default Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  form textarea {
+    height: 10rem;
+  }
+  
+  form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Dark Theme Styles */
+  body.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header.dark {
+    background-color: #222;
+  }
+  
+  nav ul li a.dark {
+    color: #fff;
+  }
+  
+  section.dark {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  a.dark {
+    color: #fff;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media only screen and (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin-right: 0;
+    }
+  
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+  
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+    }
+  }
+  
+  /* Button for toggling light/dark mode */
+  .toggle-theme {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .toggle-theme:hover {
+    background-color: #555;
+  }
+  /* Default Styles */
+/* ... existing styles ... */
+
+/* Dark Theme Styles */
+/* ... existing styles ... */
+
+/* Button for toggling light/dark mode */
+.toggle-theme {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .toggle-theme:hover {
+    background-color: #555;
+  }
+  
+  /* Styles for Dark Mode */
+  body.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header.dark {
+    background-color: #222;
+  }
+  
+  nav ul li a.dark {
+    color: #fff;
+  }
+  
+  section.dark {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  a.dark {
+    color: #fff;
+  }
+  
+  .toggle-theme.dark {
+    background-color: #fff;
+    color: #333;
+  }
+  #theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+/* Light mode */
+.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Dark mode */
+  .dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  #theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+  
+  /* Light mode */
+  .light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Dark mode */
+  .dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  
+  /* Toggle button */
+  #theme-toggle::before {
+    content: "\2600";
+    font-size: 20px;
+  }
+  
+  .light-mode #theme-toggle::before {
+    content: "\1f319";
+  }
+  
+  #theme-toggle:hover {
+    cursor: pointer;
+  }      
+  
